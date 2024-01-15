@@ -1,0 +1,50 @@
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --wrapper-bg: hsl(0, 0%, 100%);
+    --header-text-color: hsl(218, 44%, 22%);
+    --text-color: hsl(220, 15%, 55%);
+    --shadow-color: hsl(212, 45%, 89%);
+    --margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    background-color: var(--wrapper-bg);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.wrapper img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.wrapper h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: var(--margin-bottom);
+}
+
+.wrapper p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    margin-bottom: var(--margin-bottom);
+}
